@@ -1,0 +1,29 @@
+/*****************************************************/
+def compute_gcd(x, y):
+
+   while(y):
+       x, y = y, x % y
+   return x
+
+def compute_lcm(x, y):
+   lcm = (x*y)//compute_gcd(x,y)
+   return lcm
+
+num1=int(input())
+num2=int(input())
+print("The GCD is", compute_gcd(num1,num2))
+print("The L.C.M. is", compute_lcm(num1, num2))
+/*******************************************************/
+num1=int(input("Enter num1:"))
+num2=int(input("Enter num2:"))
+
+while num1%num2!=0:
+    remainder=num1%num2
+    num1=num2
+    num2=remainder
+gcd=num2
+print("GCD:",gcd)
+
+lcm=(num1*num2)//gcd
+print("LCM:",lcm)
+        

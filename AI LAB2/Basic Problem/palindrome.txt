@@ -1,0 +1,17 @@
+/****************************************/
+given = input("Enter a string to check if it is pallindrome: \n")
+reversed_string = "".join(reversed(given))
+
+if given == reversed_string:
+    print("It's a pallindrome")
+else:
+    print("It's not a pallindrome")
+
+/**************************************************************************/
+number=str(input("Enter any number:"))
+number=str(number)
+reverse=number[::-1]
+if number==reverse:
+    print("Number is palindrome")
+else:
+    print("Number is not palindrome")
